@@ -7,10 +7,17 @@ var app = new Vue ({
             'b',
             'c'
         ],
+        formMessage : '초기 메시지',
+        show : false,
+        count : 0
     },
     methods:{
         handleClick : function(e){
             alert(e.target);
+        },
+        increment : function(){
+            this.count++;
+            console.log(this);
         }
     }
 })
